@@ -1,28 +1,55 @@
+int x[10]={};
+int y[10]={};
 int z;
-int x=0;
-int y;
-int l;
+int d[]={} ;
+
 
 void setup() {
- Serial.begin(9600); 
+  Serial.begin(9600); 
+
 }
 
 void loop() {
+for (z=1;z<=10;z++)
+  {   
+   
+    x[z]=random(0,10);
+    y[z]=random(0,10); 
+    d[z]=(y[z]+x[z]);
+     
+   
+      if (d[z]%2==0)
+      {
+          Serial.print("\t");
+          Serial.print("es par");
+          Serial.print("=");
+          Serial.print(d[z]);
+          Serial.print("..");
+          delay (1000);
+     }
+       else 
+      {
+          Serial.print("\t");
+          Serial.print("es inpar");
+          Serial.print("=");
+          Serial.print(d[z]);
+          Serial.print("..");
+          delay (1000);
+    
+     }
   
-  
-  y= Serial.parseInt();
-  x=(x+y);
+  }
+    
 
-  if(x>z){
-  
-  
-    Serial.print("el valor es ");
-  Serial.print("\t");
-  Serial.print(x);
-    z=x;
+   
+   
 
+ 
+z=0;
+d[z]=0;  
+
+ 
+ }
 
   
-}  
 
-}
