@@ -11,7 +11,7 @@ pinMode(columna1,OUTPUT);
 void loop() {
  numero1 = HIGH;
  leido=digitalRead(columna1);
-if (leido=HIGH){
+if (leido==HIGH){
 
  Serial.print("hay  un numero");
   
