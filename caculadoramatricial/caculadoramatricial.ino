@@ -1,6 +1,6 @@
 int pinf[4]={2,3,4,5};
 int pinc[4]={9,8,7,6,};
-int  leido=0;
+int   leido=0;
 int  leido2=0;
 char d;
 

@@ -108,7 +108,7 @@ int sumarStack() {
   
   }
      
-  valores[0] = suma;
+  valores[0] = 0;
   conteo=1;
  
   return suma;

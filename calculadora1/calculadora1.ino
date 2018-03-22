@@ -1,4 +1,4 @@
-int x;
+ int x;
 char simbolo;
 String leidos =  "";
 int stack[100]={0};
